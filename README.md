@@ -19,19 +19,19 @@ Environment: TensorFlow 2.1, Python 3
     
     - dimension: embedding size
     - social_lr: learning rate of contrastive learning (social loss)
-    - reg: coefficient of $L_2$ regularization for recommendation loss
-    - sreg: coefficient of $L_2$ regularization for social loss
+    - reg: coefficient of L2 regularization for recommendation loss
+    - sreg: coefficient of L2 regularization for social loss
     - pre_train: file of embeddings for pretraining GNN-based model
 
 - data/Beidian/
 
     Data files for training and evaluation.
 
-    - social: each line is $user~id\quad friend~id$
+    - social: each line is *user_id friend_id*
 
-    - train/val/test: each line is $user~id\quad item~id$, which is for training, validation and testing respectively
+    - train/val/test: each line is *user_id item_id*, which is for training, validation and testing respectively
 
-    - ufi: influence behavioral data, each line is $user~id\quad friend~id\quad item~id$
+    - ufi: influence behavioral data, each line is *user_id friend_id item_id*
 
 - embedding/Beidian/
 
